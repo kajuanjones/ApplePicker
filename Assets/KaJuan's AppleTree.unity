@@ -275,6 +275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 5885670406368720347, guid: 64aa08ad2d4cab2498ffca32af9bcdbf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6774905696561982477, guid: 64aa08ad2d4cab2498ffca32af9bcdbf,
         type: 3}
       propertyPath: m_LocalPosition.x
