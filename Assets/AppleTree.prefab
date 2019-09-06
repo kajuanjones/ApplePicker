@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6774905696561982477}
   - component: {fileID: 2812463578497467823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,11 +56,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6774905696561982477}
     m_Modifications:
-    - target: {fileID: 3680520719594236341, guid: 036252a33018cce4292c304696a85c31,
-        type: 3}
-      propertyPath: m_Name
-      value: Leaves
-      objectReference: {fileID: 0}
     - target: {fileID: 3114473900609110349, guid: 036252a33018cce4292c304696a85c31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -116,6 +111,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3680520719594236341, guid: 036252a33018cce4292c304696a85c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Leaves
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680520719594236341, guid: 036252a33018cce4292c304696a85c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 036252a33018cce4292c304696a85c31, type: 3}
 --- !u!4 &121418814235582776 stripped
@@ -131,11 +136,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6774905696561982477}
     m_Modifications:
-    - target: {fileID: 710951303963689413, guid: 2f49ca636fe5f0449aef17ee4e8a0078,
-        type: 3}
-      propertyPath: m_Name
-      value: Trunk
-      objectReference: {fileID: 0}
     - target: {fileID: 7686792583101976342, guid: 2f49ca636fe5f0449aef17ee4e8a0078,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -190,6 +190,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710951303963689413, guid: 2f49ca636fe5f0449aef17ee4e8a0078,
+        type: 3}
+      propertyPath: m_Name
+      value: Trunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 710951303963689413, guid: 2f49ca636fe5f0449aef17ee4e8a0078,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f49ca636fe5f0449aef17ee4e8a0078, type: 3}
