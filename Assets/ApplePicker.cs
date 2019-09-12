@@ -15,29 +15,26 @@ public class ApplePicker : MonoBehaviour
     {
 
         basketList = new List<GameObject>();
-        for (int i = 0; i<numBaskets; i++){
-            GameObject tBasketGO = Instantiate<GameObject>(basketPrefab);
-            Vector3 pos = Vector3.zero;
 
-        }
+
         for (int i = 0; i < numBaskets; i++)
         {
             GameObject tBasketGO = Instantiate<GameObject>(basketPrefab);
             Vector3 pos = Vector3.zero;
-            pos.y = basketBottomY + (basketSpacingY * 1);
+            pos.y = basketBottomY + (basketSpacingY * i);
             tBasketGO.transform.position = pos;
             basketList.Add(tBasketGO);
 
         }
     }
 
-        public void AppleDestroyed()
+    public void AppleDestroyed()
+    {
+        GameObject[] tAppleArray = GameObject.FindGameObjectsWithTag("Apple");
+        foreach (GameObject tGO in tAppleArray)
         {
-            GameObject[] tAppleArray = GameObject.FindGameObjectsWithTag("Apple");
-            foreach(GameObject tGO in tAppleArray)
-            {
-                Destroy(tGO);
-            }
+            Destroy(tGO);
+        }
 
         int basketIndex = basketList.Count - 1;
         GameObject tBasketGO = basketList[basketIndex];
@@ -48,9 +45,9 @@ public class ApplePicker : MonoBehaviour
         {
             SceneManager.LoadScene("_Scene_0");
         }
-        }
-        
     }
+
+}
 
 
 

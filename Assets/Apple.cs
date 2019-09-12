@@ -7,10 +7,10 @@ public class Apple : MonoBehaviour
     public static float bottomY = -20f;
     void Start()
     {
-        
+
     }
 
-   
+
     void Update()
     {
         if (transform.position.y < bottomY)
@@ -19,6 +19,6 @@ public class Apple : MonoBehaviour
 
             ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
             apScript.AppleDestroyed();
-        } 
+        }
     }
 }

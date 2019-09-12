@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Basket : MonoBehaviour
 {
     public Text scoreGT;
-    
+
     void Start()
     {
         GameObject scoreGO = GameObject.Find("ScoreCounter");
@@ -14,7 +14,7 @@ public class Basket : MonoBehaviour
         scoreGT.text = "0";
     }
 
-   
+
     void Update()
     {
         Vector3 mousePos2D = Input.mousePosition;
@@ -28,7 +28,7 @@ public class Basket : MonoBehaviour
     void OnCollisionEnter(Collision coll)
     {
         GameObject collidedWith = coll.gameObject;
-        if(collidedWith.tag == "Apple")
+        if (collidedWith.tag == "Apple")
         {
             Destroy(collidedWith);
 
@@ -36,12 +36,13 @@ public class Basket : MonoBehaviour
             score += 100;
             scoreGT.text = score.ToString();
 
-            if(score > HighScore.score)
+            if (score > HighScore.score)
             {
                 HighScore.score = score;
 
-                // This is a FailSafe
+
             }
-        } 
+        }
     }
 }
+
